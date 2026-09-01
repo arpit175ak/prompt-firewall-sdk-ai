@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "prompt_policies": ["Anonymize", "Gibberish", "PromptInjection", "Toxicity", "BanCode", "Code", "Language", "Regex", "UserNameRegex", "Secrets", "TokenLimit", "Collisions"],
+  "response_policies": ["Gibberish", "Toxicity", "Code", "Language", "JSON", "Regex"],
+  "code_languages": ["python", "javascript", "typescript", "java", "go", "rust", "c", "cpp", "csharp", "ruby", "php", "shell", "powershell", "sql", "html", "css", "kotlin", "swift", "scala", "r", "perl", "lua", "dart", "haskell"],
+  "natural_languages_allowed": ["ar", "bg", "de", "el", "en", "es", "fr", "zh", "vi", "ur", "tr", "sw", "th", "pt", "ru", "pl", "hi", "it", "ja", "nl"],
+  "anonymize_entities": ["EMAIL_ADDRESS", "PHONE_NUMBER", "CREDIT_CARD", "IP_ADDRESS", "PERSON", "LOCATION", "DATE_TIME", "URL", "IBAN_CODE", "US_SSN", "PASSPORT", "DRIVER_LICENSE", "BANK_ACCOUNT", "MEDICAL_LICENSE", "US_ITIN", "US_BANK_NUMBER", "US_ROUTING_NUMBER", "CRYPTO", "NRP", "ORGANIZATION", "AGE", "UK_NHS", "AU_TFN", "IN_AADHAAR"],
+  "prompt_injection_taxonomies": ["direct_override", "role_hijack", "system_prompt_extraction", "delimiter_escape", "indirect_instruction", "encoding_obfuscation", "tool_abuse", "data_exfiltration", "instruction_smuggling", "context_poisoning", "developer_impersonation", "jailbreak", "many_shot", "translation_attack", "payload_splitting", "markdown_injection", "memory_poisoning", "rag_poisoning", "prompt_leaking", "policy_evasion", "virtualization", "hypothetical_framing", "recursive_instruction"],
+  "attachment_extensions_allowed": [".txt", ".md", ".json", ".csv", ".py", ".js", ".html", ".xml", ".yaml", ".pdf", ".docx", ".png", ".jpg"],
+  "attachment_extensions_denied": [".exe", ".dll", ".bat", ".cmd", ".com", ".msi", ".scr", ".jar", ".ps1", ".sh", ".zip", ".rar", ".7z"],
+  "token_boundaries": [1, 8, 64, 256, 1024, 4096, 8000, 8100, 8180, 8190, 8191, 8192, 8193, 8200, 8250, 8300, 9000, 10000, 16384, 65536],
+  "username_regex": {"allowed_fixture": "user@accuknox.com", "blocked_fixture": "blocked@example.org", "backend_semantics": "UNKNOWN_REQUIRES_LIVE_VALIDATION"}
+}

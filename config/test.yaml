@@ -1,0 +1,12 @@
+{
+  "live_enabled": false,
+  "max_live_requests": 0,
+  "workers": 1,
+  "rps": 0.2,
+  "batch_size": 1,
+  "max_attempts": 1,
+  "timeout_seconds": 10,
+  "maximum_live_requests": 20,
+  "seed": 20260830,
+  "cases_per_family": 20
+}

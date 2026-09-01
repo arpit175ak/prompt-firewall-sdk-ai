@@ -1,0 +1,34 @@
+path,group,declared_extension,content_shape,bytes,sha256,note
+testdata/attachments/allowed/safe.txt,allowed,.txt,.txt,36,5ea5ac78242130e77f1ca48d57fab1886ad0bd44bf233febf570c9b982d48307,configured allowed extension
+testdata/attachments/allowed/safe.md,allowed,.md,.md,35,c356b94eacdd94be80599b43c4446adba5ff8719c50c4b656513a54e5e12deb1,configured allowed extension
+testdata/attachments/allowed/safe.json,allowed,.json,.json,37,87499d780fc930a668530cd5e8dd93af4b4d8330735b89c255ee9acb0a8f0d34,configured allowed extension
+testdata/attachments/allowed/safe.csv,allowed,.csv,.csv,36,0bd4f71f0191fa784b570e6a8f08126bf77e9a45ecc2cc74b980c97849810da8,configured allowed extension
+testdata/attachments/allowed/safe.py,allowed,.py,.py,35,18b34329e2f2d506cd00ff5361f72c1b1ea6f89e19a032d5073de82bd54c1d58,configured allowed extension
+testdata/attachments/allowed/safe.js,allowed,.js,.js,35,9d12ca5f756cc7767db65b8630e45fac3e6a6165f653248cdd519b415a1ddb83,configured allowed extension
+testdata/attachments/allowed/safe.html,allowed,.html,.html,37,226edc3966e329ff2fad07d563311b62f75ab01bf5b7c695050be114a00cd451,configured allowed extension
+testdata/attachments/allowed/safe.xml,allowed,.xml,.xml,36,5515e6867c5c822393332da3c907d367f35be097bf349cbe897adea0f9cf9def,configured allowed extension
+testdata/attachments/allowed/safe.yaml,allowed,.yaml,.yaml,37,f4fe61708d0bec0e8763519b8651edc3117a6e8603325ca861b20c3aad9d81b8,configured allowed extension
+testdata/attachments/allowed/safe.pdf,allowed,.pdf,.pdf,37,a3182c4d1c28eeb93ab4e88e416e9f096339f66d783aa1e3c9e62b46fa8dd178,configured allowed extension
+testdata/attachments/allowed/safe.docx,allowed,.docx,.docx,28,294579a380e565f42a0d66ae31aac218c179641f9dc095de890a07ded687381f,configured allowed extension
+testdata/attachments/allowed/safe.png,allowed,.png,.png,27,bfbf18a46d463a1f4b43a122c0ea075e662fd02f297defcf1dd888c928cbae25,configured allowed extension
+testdata/attachments/allowed/safe.jpg,allowed,.jpg,.jpg,25,cbf88017d5184eab3cdde00e3c274f0f1c37875309866f6266a4699acc754553,configured allowed extension
+testdata/attachments/denied/safe.exe,denied,.exe,.txt,36,5ea5ac78242130e77f1ca48d57fab1886ad0bd44bf233febf570c9b982d48307,inert specimen for configured denied extension
+testdata/attachments/denied/safe.dll,denied,.dll,.txt,36,5ea5ac78242130e77f1ca48d57fab1886ad0bd44bf233febf570c9b982d48307,inert specimen for configured denied extension
+testdata/attachments/denied/safe.bat,denied,.bat,.txt,36,5ea5ac78242130e77f1ca48d57fab1886ad0bd44bf233febf570c9b982d48307,inert specimen for configured denied extension
+testdata/attachments/denied/safe.cmd,denied,.cmd,.txt,36,5ea5ac78242130e77f1ca48d57fab1886ad0bd44bf233febf570c9b982d48307,inert specimen for configured denied extension
+testdata/attachments/denied/safe.com,denied,.com,.txt,36,5ea5ac78242130e77f1ca48d57fab1886ad0bd44bf233febf570c9b982d48307,inert specimen for configured denied extension
+testdata/attachments/denied/safe.msi,denied,.msi,.txt,36,5ea5ac78242130e77f1ca48d57fab1886ad0bd44bf233febf570c9b982d48307,inert specimen for configured denied extension
+testdata/attachments/denied/safe.scr,denied,.scr,.txt,36,5ea5ac78242130e77f1ca48d57fab1886ad0bd44bf233febf570c9b982d48307,inert specimen for configured denied extension
+testdata/attachments/denied/safe.jar,denied,.jar,.txt,36,5ea5ac78242130e77f1ca48d57fab1886ad0bd44bf233febf570c9b982d48307,inert specimen for configured denied extension
+testdata/attachments/denied/safe.ps1,denied,.ps1,.txt,36,5ea5ac78242130e77f1ca48d57fab1886ad0bd44bf233febf570c9b982d48307,inert specimen for configured denied extension
+testdata/attachments/denied/safe.sh,denied,.sh,.txt,36,5ea5ac78242130e77f1ca48d57fab1886ad0bd44bf233febf570c9b982d48307,inert specimen for configured denied extension
+testdata/attachments/denied/safe.zip,denied,.zip,.txt,36,5ea5ac78242130e77f1ca48d57fab1886ad0bd44bf233febf570c9b982d48307,inert specimen for configured denied extension
+testdata/attachments/denied/safe.rar,denied,.rar,.txt,36,5ea5ac78242130e77f1ca48d57fab1886ad0bd44bf233febf570c9b982d48307,inert specimen for configured denied extension
+testdata/attachments/denied/safe.7z,denied,.7z,.txt,36,5ea5ac78242130e77f1ca48d57fab1886ad0bd44bf233febf570c9b982d48307,inert specimen for configured denied extension
+testdata/attachments/mismatch/claims_pdf.pdf,mismatch,.pdf,.txt,36,5ea5ac78242130e77f1ca48d57fab1886ad0bd44bf233febf570c9b982d48307,extension/content mismatch
+testdata/attachments/mismatch/claims_txt.txt,mismatch,.txt,.pdf,37,a3182c4d1c28eeb93ab4e88e416e9f096339f66d783aa1e3c9e62b46fa8dd178,extension/content mismatch
+testdata/attachments/double_extension/invoice.pdf.exe,double_extension,.exe,.txt,36,5ea5ac78242130e77f1ca48d57fab1886ad0bd44bf233febf570c9b982d48307,double extension
+testdata/attachments/double_extension/image.jpg.sh,double_extension,.sh,.txt,36,5ea5ac78242130e77f1ca48d57fab1886ad0bd44bf233febf570c9b982d48307,double extension
+testdata/attachments/case_variants/SAFE.TXT,case_variants,.TXT,.txt,36,5ea5ac78242130e77f1ca48d57fab1886ad0bd44bf233febf570c9b982d48307,case variant
+testdata/attachments/case_variants/mixed.PdF,case_variants,.PdF,.pdf,37,a3182c4d1c28eeb93ab4e88e416e9f096339f66d783aa1e3c9e62b46fa8dd178,case variant
+testdata/attachments/case_variants/photo.JpG,case_variants,.JpG,.jpg,25,cbf88017d5184eab3cdde00e3c274f0f1c37875309866f6266a4699acc754553,case variant

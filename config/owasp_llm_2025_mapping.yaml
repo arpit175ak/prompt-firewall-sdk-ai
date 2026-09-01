@@ -1,0 +1,50 @@
+version: 2025
+taxonomy: OWASP Top 10 for LLM Applications 2025
+categories:
+  LLM01:
+    name: Prompt Injection
+    coverage: DIRECT_PROMPT_FIREWALL_TEST
+    relevant_scanners: [PromptInjection]
+    secondary_scanners: [Regex, Language, Gibberish]
+    rationale: Validate direct, indirect, encoded, obfuscated and instruction-hierarchy manipulation inputs.
+  LLM02:
+    name: Sensitive Information Disclosure
+    coverage: DIRECT_PROMPT_FIREWALL_TEST
+    relevant_scanners: [Anonymize, Secrets, Regex]
+    response_relevance: [Deanonymize, Regex]
+    rationale: Validate synthetic PII, credentials, tokens and sensitive-data handling.
+  LLM03:
+    name: Supply Chain
+    coverage: OUT_OF_SCOPE_FOR_PROMPT_FIREWALL_SDK
+    rationale: Requires model/dependency/artifact/provider supply-chain controls rather than prompt classification.
+  LLM04:
+    name: Data and Model Poisoning
+    coverage: OUT_OF_SCOPE_FOR_PROMPT_FIREWALL_SDK
+    rationale: Requires training, fine-tuning, RAG corpus, embedding or model-integrity validation.
+  LLM05:
+    name: Improper Output Handling
+    coverage: PARTIAL_PROMPT_FIREWALL_COVERAGE
+    response_scanners: [Code, JSON, Regex, Toxicity, Language]
+    rationale: Prompt Firewall response scanning can validate some unsafe output forms, but application-side output encoding/validation remains separate.
+  LLM06:
+    name: Excessive Agency
+    coverage: OUT_OF_SCOPE_FOR_PROMPT_FIREWALL_SDK
+    rationale: Requires tool permissions, authorization, action approval and agent capability controls.
+  LLM07:
+    name: System Prompt Leakage
+    coverage: DIRECT_PROMPT_FIREWALL_TEST
+    relevant_scanners: [PromptInjection, Secrets, Regex]
+    rationale: Test requests attempting to expose system/developer instructions or sensitive configuration.
+  LLM08:
+    name: Vector and Embedding Weaknesses
+    coverage: OUT_OF_SCOPE_FOR_PROMPT_FIREWALL_SDK
+    rationale: Requires vector database, retrieval and embedding security testing.
+  LLM09:
+    name: Misinformation
+    coverage: OUT_OF_SCOPE_FOR_PROMPT_FIREWALL_SDK
+    rationale: Requires factuality/grounding/evaluation controls; do not equate Toxicity or Language policies with misinformation detection.
+  LLM10:
+    name: Unbounded Consumption
+    coverage: PARTIAL_PROMPT_FIREWALL_COVERAGE
+    relevant_scanners: [TokenLimit]
+    rationale: Token-limit enforcement is one bounded-input control, but OWASP unbounded-consumption risk is broader than prompt token length alone.
